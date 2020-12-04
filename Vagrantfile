@@ -52,6 +52,7 @@ Vagrant.configure("2") do |config|
       end
       worker.vm.provision "shell", path: "worker.sh",
         env: { "MASTER_IP" => MASTER_IP, "TOKEN" => TOKEN }
+      worker.vm.provision "shell", path: "nfs.sh"
     end
   end
 end
