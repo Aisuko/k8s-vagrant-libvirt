@@ -14,6 +14,12 @@ Current supported configuration(s):
 
 # usage
 
+Should install libvirt plugin at first, if you did not install it
+
+```bash
+vagrant plugin install vagrant-libvirt
+```
+
 Create and provision the cluster
 
 ```bash
